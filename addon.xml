@@ -1,0 +1,20 @@
+<addon id="plugin.video.iptvvoucher" name="ITZONE TV Voucher Renewal" version="1.0.0"
+       provider-name="IT ZONE MG" extension="xbmc.python.script">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary>ITZONE TV Voucher Code Renewal</summary>
+        <description>Enter a voucher code to renew the IPTV subscription.</description>
+        <platform>all</platform>
+        <disclaimer>Use with a valid IPTV service.</disclaimer>
+        <language>en</language>
+        <assets>
+            <icon>test.png</icon>
+        </assets>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+
+    
+</addon>
